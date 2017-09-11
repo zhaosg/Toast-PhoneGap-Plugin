@@ -53,9 +53,9 @@ public class Toast extends CordovaPlugin {
       return true;
 
     } else if (ACTION_SHOW_EVENT.equals(action)) {
-      if (this.isPaused) {
-        return true;
-      }
+      //if (this.isPaused) {
+      //  return true;
+      //}
 
       final JSONObject options = args.getJSONObject(0);
       final String msg = options.getString("message");
